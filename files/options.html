@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>VK voice typing</title>
+	<link type="text/css" rel="stylesheet" href="options.css">
+	<script type="text/javascript" src="../js/jquery/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="../js/utils.js"></script>
+</head>
+
+<body>
+	<div class="settings-section">
+		<h2 id="title">Settings</h2>
+	</div>
+	<label id="hotkeyItem">
+		<span id="hotkeyItemTitle">Select hotkey</span>
+		<span>:</span>
+		<input id="hotkeyItemInput">
+		<select id='hotkey'>
+			<option id="custom">Custom</option>
+			<option data='{"ctrlKey": true, "keyCode": 81}'>Ctrl + Q</option>
+			<option data='{"ctrlKey": true, "keyCode": 66}'>Ctrl + B</option>
+			<option data='{"ctrlKey": true, "shiftKey": true, "keyCode": 65}'>Ctrl + Shift + A</option>
+			<option data='{"ctrlKey": true, "shiftKey": true, "keyCode": 83}'>Ctrl + Shift + S</option>
+			<option data='{"ctrlKey": true, "shiftKey": true, "keyCode": 69}'>Ctrl + Shift + E</option>
+		</select>
+	</label>
+	<div style="margin-top: 10px;">
+		<label id="selectLanguageItem">
+			<span id="selectLangItemTitle"></span>
+			<span>:</span>
+			<select id="language" style="margin-left: 10px;">
+				<option value="0">Русский</option>
+			</select>
+		</label>
+	</div>
+	<div id="status" style="margin-top: 10px;"></div>
+	<button id="save" class="flat_button" style="margin-top: 10px;">Сохранить</button>
+	<script src="../js/options.js"></script>
+</body>
+
+</html>

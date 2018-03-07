@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background: #F7F7F7;
+    display: inline-block;
+}
+
+.settings-section h2 {
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    font-size: 1.09em;
+    color: #36638E;
+    border-color: #B9C4DA;
+    -webkit-font-smoothing: antialiased;
+    border-bottom: 1px solid #DAE1E8;
+}
+
+.flat_button {
+    padding: 6px 16px 7px 16px;
+    margin: 0;
+    font-size: 11px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    vertical-align: top;
+    overflow: visible;
+    line-height: 13px;
+    text-decoration: none;
+    background: none;
+    background-color: #6383a8;
+    color: #FFF;
+    border: 0;
+    border-radius: 2px;
+    transition: background-color 100ms ease-in-out;
+}
+
+#save {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#save.active {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+#hotkeyItemInput {
+    display: none;
+}

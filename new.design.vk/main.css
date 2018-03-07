@@ -1,0 +1,78 @@
+.ws {
+	width: 25px;
+	height: 25px;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/files/img/micblack.gif');
+	background-size: 15px 19px;
+	background-position-x: 5px;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 24px;
+	z-index: 1;
+}
+
+.im-chat-input .ws {
+	position: absolute !important;
+	z-index: 2;
+	overflow: hidden;
+	right: 62px;
+	top: 2px !important;
+}
+
+.im-chat-input .im-chat-input--smile-wrap {
+	right: 9px !important;
+}
+
+.im-chat-input .ws {
+	right: -8px;
+	margin-top: 6px;
+	z-index: 4;
+}
+
+.ws-wrap {
+	position: relative;
+}
+
+.ws-wrap .ws {
+	top: 6px;
+}
+
+.ws[recognizing="true"] {
+	background-image: url('chrome-extension://__MSG_@@extension_id__/files/img/micred.gif');
+	opacity: 1;
+}
+
+.ws-wrap~textarea {
+	padding-right: 24px !important;
+}
+
+#submit_post_box:not(.own_field) {
+	min-height: 48px;
+}
+
+#submit_post_box:not(.own_field) .ws {
+	display: none;
+}
+
+#submit_post_box.shown .ws {
+	display: block;
+}
+
+#submit_post_box.own_field div.submit_post_field,
+#submit_post_box.own_field div.submit_post_field[contenteditable=true],
+#submit_post_box.own_field div.submit_post_field[contenteditable=true]~.placeholder .ph_input,
+#submit_post_box.own_field div.submit_post_field~.placeholder .ph_input {
+	min-height: 70px !important;
+}
+
+div.fc_editable,
+div.fc_editable~.placeholder .ph_input {
+	min-height: 48px !important;
+}
+
+.emoji_smile_wrap .ws {
+	position: relative;
+	top: 0;
+}
